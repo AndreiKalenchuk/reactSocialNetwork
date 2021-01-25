@@ -2,6 +2,11 @@
     grid-area: c;
     background: aliceblue;
 }
-.item {
 
+.posts {
+
+}
+
+.item {
+    color: cyan;
 }

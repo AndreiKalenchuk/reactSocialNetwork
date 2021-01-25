@@ -1,11 +1,25 @@
-import React from 'react'
-import logo from './../logo.svg';
+import React from 'react';
+import s from './Navbar.module.css';
 
-const Header = () => {
+const Navbar = () => {
     return (
-        <header className='header'>
-            <img src={logo}/>
-        </header>
+        <nav className={s.nav}>
+            <div className={`${s.item} ${s.active}`}>
+                <a> Profile</a>
+            </div>
+            <div className={`${s.item} ${s.active}`}>
+                <a> Messages</a>
+            </div>
+            <div className={`${s.item} ${s.active}`}>
+                <a> News</a>
+            </div>
+            <div className={`${s.item} ${s.active}`}>
+                <a> Music</a>
+            </div>
+            <div className={`${s.item} ${s.active}`}>
+                <a> Settings</a>
+            </div>
+        </nav>
     )
 }
-export default Header;
+export default Navbar;
